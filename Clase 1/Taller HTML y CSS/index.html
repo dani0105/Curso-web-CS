@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Este meta permite la compatibildad de pantalla con los telefonos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Esto permite importar archivos css entre otros recursos -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/post.css">
+    <link rel="stylesheet" href="./assets/css/index-mobile.css">
+    <link rel="stylesheet" href="./assets/css/post-mobile.css">
+    <!-- Nombre que aparece en la paestalal del navegador -->
+    <title>Comentarios</title>
+
+</head>
+<body>
+    <!-- Barra de navegacion o menu de la aplicacion -->
+    <nav class="menu">
+        <span class="menu-title">
+            Titulo de la app
+        </span>
+    </nav>
+
+    <!-- Contenido o cuerpo de la pagina -->
+    <div class="container">
+        <div class="card margin-top">
+
+            <!-- Cabezera del contenido de la pagina -->
+            <div class="card-head">
+                <h3>Muro de comentarios</h3>
+                <!-- Formulario para ingresar nuevos post -->
+                <form class="form" >
+                    <div class="form-field">
+                        <label>Comentario:</label>
+                        <textarea class="form-field-input" placeholder="Escriba el mensaje aquí"></textarea>
+                        <div class="form-field-options">
+                            <input class="form-field-submit" type="submit" value="Publicar">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Cuerpo del contenido de la pagina -->
+            <div class="card-body">
+
+                <!-- card para las publicaciones que esten registradas -->
+                <div class="post-card">
+
+                    <!-- Contenido del post -->
+                    <div class="post-content">
+                        <small><strong>24 de septiembre del 2020 a las 12:50pm</strong></small>
+                        <p> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore
+                        </p>
+                    </div>
+                    <!-- comentarios del post -->
+                    <div class="post-comments">
+                        <!-- Contenido del comentario al post -->
+                        <div class="post-content">
+                            <small><strong>24 de septiembre del 2020 a las 12:50pm</strong></small>
+                            <p> 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore
+                            </p>
+                        </div>
+
+                        <!-- Contenido del comentario al post -->
+                        <div class="post-content">
+                            <small><strong>24 de septiembre del 2020 a las 12:50pm</strong></small>
+                            <p> 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore
+                            </p>
+                        </div>
+
+                        <!-- Formulario para crear un comentario al post -->
+                        <form >
+                            <div class="form-field">
+                                <label>Comentario:</label>
+                                <textarea class="form-field-input" placeholder="Escriba el mensaje aquí"></textarea>
+                                <div class="form-field-options">
+                                    <input class="form-field-submit" type="submit" value="Publicar">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Pie de pagina de la aplicacion -->
+        <footer class="margin-top">
+            Informacion del pagina tal como: <a href="./about.html"> about</a>, links, terminos de privacidad
+        </footer>
+    </div>
+</body>
+</html>

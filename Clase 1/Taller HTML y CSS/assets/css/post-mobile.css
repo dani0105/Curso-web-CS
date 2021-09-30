@@ -1,0 +1,14 @@
+/* estilos para el form que permite registrar nuevos post*/
+
+/* cuando la pantalla tenga una resolucion menor a 900px aplicar estos estilos */
+@media screen and (max-width: 900px) {
+    .form{
+        width: 90%;
+    }
+    
+    .form-field-input{
+        height: 40px;
+        font-size: 16px;
+    }
+    
+}

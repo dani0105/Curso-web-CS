@@ -1,0 +1,75 @@
+/* estilos para el form que permite registrar nuevos post*/
+.form{
+    margin: auto;
+    width: 80%;
+}
+
+.form-field{
+    width: 100%;
+}
+
+.form-field-input{
+    border-radius: 5px;
+    border: 1px solid ;
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    resize: none;
+}
+
+.form-field-options{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.form-field-submit{
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #7253ED;
+    color: white;
+    border:1px solid rgb(97, 66, 223);
+}
+
+.form-field-submit:hover{
+    background-color: rgb(97, 66, 223);
+    cursor: pointer;
+}
+
+
+/* estilos para cada post que exista */
+.post-card{
+    width: 90%;
+    margin: auto;
+    border: 1px solid rgba(128, 128, 128, 0.616);
+    border-top: none;
+    padding: 10px;
+}
+.post-card:first-child{ /* eventos sobre clases css (primero del DOM con la clase post-card) */
+    border-top: 1px solid rgba(128, 128, 128, 0.616);
+}
+
+.post-content{
+    margin-bottom: 20px;
+}
+
+.post-comments{
+    width: 90%;
+    margin: auto;
+}
+
+.post-content{
+    padding: 5px;
+    border-top: 1px solid rgba(128, 128, 128, 0.616); /* rgba permite transparencia en el color */
+}
+
+.post-content:first-child { /* eventos sobre clases css (ultimo del DOM con la clase post-card) */
+    border-top: none;
+}
+
+.post-content p{ /* Ejemplo de edicion de una etiqueta dentro de una clase */
+    margin-top: 5px;
+}
