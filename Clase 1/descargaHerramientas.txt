@@ -1,0 +1,22 @@
+
+Crear cuenta de GitHub
+------------------------------
+
+Para hacer uso de la consola: https://git-scm.com/
+
+APP Desktop de GitHub: https://desktop.github.com/
+
+-------------------------------
+https://code.visualstudio.com/download
+
+-------------------------------
+https://nodejs.org/es/download/
+
+node -v
+npm -v
+-------------------------------
+
+https://www.npmjs.com/package/@angular/cli
+
+
+
