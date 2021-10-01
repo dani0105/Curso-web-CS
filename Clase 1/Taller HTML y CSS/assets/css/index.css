@@ -2,12 +2,10 @@
 body{
     background-color: #F4F4F4;
     font-family: arial;
+    margin: 0px;
 }
 
 .menu{
-    position: absolute;
-    top: 0px; 
-    left: 0px;
     width: 100%;
     background-color: #7253ED;
     color: white;
@@ -23,29 +21,35 @@ body{
     font-weight: bold;
 }
 
-
 .container{
-    position: absolute;
-    left: 0px;
-    top: 50px;
     width: 100%;
+    /* 
+        Esta es uan funcion que permite hacer operaciones basicas
+        En este caso resta 50 pixeles al alto total de la patalla 
+    */
+    min-height: calc(100vh - 50px); 
+    display: inline-block;
 }
 
 .card{
     border-radius: 10px;
     width: 80%;
     margin: auto;
-    min-height: calc(100vh - 50px - 10vh);
     background-color: white;
     padding: 10px;
+    
+}
+
+.shadow{
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.34);
 }
 
 .card-body{
     padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 footer{ /* Ejemplo de estilos para etiquetas*/
-    left: 0px;
     height: auto;
     background-color: #5b3bda;
     color: white;
@@ -66,5 +70,5 @@ footer a:hover{ /* ejemplo de eventos sobre clases en css (puntero sobre el elem
 }
 
 .margin-top{
-    margin-top: 50px;
+    margin-top: 40px;
 }

@@ -10,12 +10,10 @@
     .card{
         border-radius: 0px;
         width: auto;
-        min-height: calc(100vh - 50px);
         padding: 10px;
     }
 
     footer{ /* Ejemplo de estilos para etiquetas*/
-        left: 0px;
         padding: 10px;
         font-size: 14px;
     }
