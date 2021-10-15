@@ -1,0 +1,48 @@
+.container{
+    padding: 10px;
+    background-color: rgb(235, 59, 59);
+}
+
+.sub-container{
+    margin-top: 10px;
+    background-color: rgb(202, 233, 62);
+}
+
+.display-inline{
+    display: inline-block;
+    max-width: 25px;
+    padding: 50px;
+    margin-left: 10px;
+}
+
+.background-blue{
+    color: white;
+    background-color: rgb(44, 100, 255);
+}
+
+.center{
+    text-align: center;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.text-white{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.text-black{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.margin-top{
+    margin-top: 50px;
+}
