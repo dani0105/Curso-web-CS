@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Decodificacion de texto de la pagina -->
+    <meta charset="UTF-8">
+    <!-- Ajuste a las resoluciones de telefonos mobiles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titulo de la pagina -->
+    <title>ToDo List</title>
+
+    <!-- Importacion de estilos CSS -->
+    <link rel="stylesheet" href="./toDoList.css">
+
+    <!-- Improtacion de codigo Javascript -->
+    <script src="./toDoList.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Contiene los elementro de entrada de datos -->
+        <div class="input-group">
+            <!-- entrada de texto de las tareas  -->
+            <input class="input-text padding" id="textoToDo" placeholder="Que tengo que hacer?" type="text">
+            <!-- boton para agregar la tarea -->
+            <button class="input-button padding" onclick="addTask()">Agregar</button>
+        </div>
+        <div>
+            <h3 class="sub-title">Lista de tareas</h3>
+            <!-- La lista que contendra las tareas -->
+            <ul class="list" id="toDoList">
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
