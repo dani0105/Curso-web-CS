@@ -14,4 +14,4 @@ _Para ejecutar el código de la carpeta `Ejemplo javascript` es necesario tener 
     node index.js
 ```
 
-_ Para la visualización de los ejemplos html solo es necesario abrir los archivos con un navegador web como `Google Chrome`,`Firefox` o `Edge`._
+_Para la visualización de los ejemplos html solo es necesario abrir los archivos con un navegador web como `Google Chrome`,`Firefox` o `Edge`._
