@@ -7,6 +7,7 @@ const logger        = require('morgan');
 var router          = require('express').Router();
 const { Client }    = require('pg');
 
+console.log(process.env.DATABASE_URL)
 //Conexion a base de datos
 const client = new Client({
     connectionString: process.env.DATABASE_URL,
@@ -15,11 +16,15 @@ const client = new Client({
     }
 });
 
-client.connect().then( result => {
-    console.log("Conectado a la base de datos")
-}).catch(error => {
-    console.log("Error al conectar con base de datos")
-});
+try {
+    client.connect().then( result => {
+        console.log("Conectado a la base de datos")
+    }).catch(error => {
+        console.log("Error al conectar con base de datos")
+    });
+} catch (error) {
+    console.log(error)
+}
 
 //Configuracion del servidor
 app.set('port', process.env.PORT || 8081);
