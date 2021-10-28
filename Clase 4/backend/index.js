@@ -17,6 +17,8 @@ const client = new Client({
 
 client.connect().then( result => {
     console.log("Conectado a la base de datos")
+}).catch(error => {
+    console.log("Error al conectar con base de datos")
 });
 
 //Configuracion del servidor
