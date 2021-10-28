@@ -7,7 +7,7 @@ const logger        = require('morgan');
 var router          = require('express').Router();
 const { Client }    = require('pg');
 
-console.log(process.env.DATABASE_URL)
+console.log("enviroment: ",process.env.DATABASE_URL)
 //Conexion a base de datos
 const client = new Client({
     connectionString: process.env.DATABASE_URL,
@@ -64,5 +64,6 @@ app.use(router);
 
 // inicio del servidor
 app.listen(app.get('port'),() => {
+    console.log("enviroment: ",process.env.DATABASE_URL)
     console.log(`server running in http://localhost:${app.get('port')}`);
 });
