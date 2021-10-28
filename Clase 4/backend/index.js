@@ -9,7 +9,7 @@ const { Client }    = require('pg');
 
 //Conexion a base de datos
 const client = new Client({
-    connectionString: process.env.POSTGRESQL_STRING,
+    connectionString: process.env.DATABASE_URL,
     ssl:{
         rejectUnauthorized: false
     }
