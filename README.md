@@ -13,5 +13,4 @@ _Las personas que ayudaron de la realización de este curso:_
 * **Daniel Rojas** - *Creación  de ejercicios* - [dani0105](https://github.com/dani0105)
 * **Alicia Díaz** - *Creación  de ejercicios* - [AliciaD2018](https://github.com/AliciaD2018)
 * **Ronald Herrera** - *Creación  de ejercicios* - [ronaldhgamez](https://github.com/ronaldhgamez)
-
- 
+* **Alejandro Urbina** - *Creación  de ejercicios* - [jaleum098](https://github.com/jaleum098)

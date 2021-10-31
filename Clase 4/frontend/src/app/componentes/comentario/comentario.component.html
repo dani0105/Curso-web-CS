@@ -1,0 +1,12 @@
+<input type="text" [(ngModel)]="this.mensaje">
+<button (click)="this.enviar()">Guardar</button>
+
+<h3>Comentarios</h3>
+<ul>
+    <li *ngFor="let mensaje of this.mensajes">
+        <label>{{ mensaje.created_at | date }}</label>
+        <p>
+            {{ mensaje.comment }}
+        </p>
+    </li>
+</ul>

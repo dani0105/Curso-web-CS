@@ -7,7 +7,6 @@ const logger        = require('morgan');
 var router          = require('express').Router();
 const { Client }    = require('pg');
 
-console.log("enviroment: ",process.env.DATABASE_URL)
 //Conexion a base de datos
 const client = new Client({
     connectionString: process.env.DATABASE_URL,
@@ -33,6 +32,16 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 
 app.use(logger('dev'));
+
+
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", req.headers.origin); //cambia esto 
+    res.header("Access-Control-Allow-Headers", "x-requested-with, content-type,Authorization");
+    res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE,OPTIONS");
+    res.header("Access-Control-Allow-Credentials", "true");
+    next();
+});
+
 
 // rutas del servidor
 router.post('/comment', async (req, res, next) => {
@@ -60,10 +69,14 @@ router.get('/comment', async (req, res, next) => {
     }
 });
 
+
+router.get('/', async (req, res, next) => {
+    res.status(200).send("Hola Mundo!")
+});
+
 app.use(router);
 
 // inicio del servidor
 app.listen(app.get('port'),() => {
-    console.log("enviroment: ",process.env.DATABASE_URL)
     console.log(`server running in http://localhost:${app.get('port')}`);
 });
